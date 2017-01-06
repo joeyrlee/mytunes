@@ -16,9 +16,6 @@ var SongModel = Backbone.Model.extend({
 
   ended: function() {
     this.trigger('ended', this);
-    // var firstModel = this.collection.models.slice(0, 1);
-    // this.collection.remove(firstModel);
-    // return console.log(this.length);
   }
 
 });
