@@ -5,6 +5,8 @@ var LibraryView = Backbone.View.extend({
 
   initialize: function() {
     this.render();
+    
+    // A `sync` event is emitted when the request sent by `fetch` is successful
     this.collection.on('sync', this.render, this);
   },
 
